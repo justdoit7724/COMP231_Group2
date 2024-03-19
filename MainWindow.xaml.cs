@@ -23,6 +23,7 @@ namespace COMP231_Group2
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

@@ -24,7 +24,7 @@
         <Label Content="Type of the House:" Grid.Row="3" Margin="2"/>
         <TextBox x:Name="txtType" Grid.Row="3" Margin="150,2" />
 
-        <Button Content="Calculate Price" Grid.Row="4" Click="CalculatePrice_Click" Margin="2" />
+        <Button Content="Calculate Price" Grid.Row="4" Margin="2" />
 
         <TextBlock x:Name="txtOutput" Grid.Row="5" Text="Predicted Price Will Be Displayed Here" Margin="2" TextWrapping="Wrap" />
 
