@@ -75,10 +75,6 @@ namespace COMP231_Group2
             }
         }
 
-        public List<Object> GetDatabase()
-        {
-            return null;
-        }
         public float GetPredict(Object input)
         {
             return 0;

@@ -10,31 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace COMP231_Group2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// PredictionWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PredictionWindow : Window
     {
-        public MainWindow()
+        public PredictionWindow()
         {
             InitializeComponent();
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PredictionWindow predWnd = new PredictionWindow();
-            predWnd.ShowDialog();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
