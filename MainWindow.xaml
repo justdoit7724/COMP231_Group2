@@ -3,30 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+        <Button Content="Prediction" HorizontalAlignment="Left" Margin="267,115,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Analysis" HorizontalAlignment="Left" Margin="267,164,0,0" VerticalAlignment="Top" Width="57" Click="Button_Click_1"/>
 
-        <Label Content="Number of Rooms:" Grid.Row="0" Margin="2"/>
-        <TextBox x:Name="txtNumRooms" Grid.Row="0" Margin="150,2" />
-
-        <Label Content="Size of the House (sqft):" Grid.Row="1" Margin="2"/>
-        <TextBox x:Name="txtSize" Grid.Row="1" Margin="150,2" />
-
-        <Label Content="Region/Location:" Grid.Row="2" Margin="2"/>
-        <TextBox x:Name="txtLocation" Grid.Row="2" Margin="150,2" />
-
-        <Label Content="Type of the House:" Grid.Row="3" Margin="2"/>
-        <TextBox x:Name="txtType" Grid.Row="3" Margin="150,2" />
-
-        <Button Content="Calculate Price" Grid.Row="4" Click="CalculatePrice_Click" Margin="2" />
-
-        <TextBlock x:Name="txtOutput" Grid.Row="5" Text="Predicted Price Will Be Displayed Here" Margin="2" TextWrapping="Wrap" />
 
     </Grid>
 </Window>
