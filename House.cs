@@ -10,7 +10,9 @@ namespace COMP231_Group2
     {
         public int RoomCount { get; set; }
         public int BathCount { get; set; }
-
-        // add variables here as much as we have
+        public int Size { get; set; }
+        public string Region { get; set; }
+        public bool Furnished { get; set; }
+        public bool ParkingAvailable { get; set; }
     }
 }
