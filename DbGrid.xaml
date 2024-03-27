@@ -1,0 +1,42 @@
+﻿<Window x:Class="COMP231_Group2.DbGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:COMP231_Group2"
+        mc:Ignorable="d"
+        Title="DbGrid" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="GridDB" ItemsSource="{Binding}" Margin="78,46,78,217" AutoGenerateColumns="False" EnableRowVirtualization="True" ColumnWidth="*" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="RoomCount"
+            Binding="{Binding Path=RoomCount}"
+            Header="Rooms"
+            IsReadOnly="True" />
+                <DataGridTextColumn x:Name="BathCount"
+            Binding="{Binding Path=BathCount}"
+            Header="Baths"
+            IsReadOnly="True" />
+                <DataGridTextColumn x:Name="Size"
+            Binding="{Binding Path=Size}"
+            Header="Size"
+            IsReadOnly="True" />
+                <DataGridTextColumn x:Name="Region"
+            Binding="{Binding Path=Region}"
+            Header="Region"
+            IsReadOnly="True" />
+                <DataGridCheckBoxColumn x:Name="Furnished"
+                                        Binding="{Binding Path=Furnished}"
+                                        Header="Furnished"
+                                        IsReadOnly="True"/>
+                <DataGridCheckBoxColumn x:Name="Parking"
+                        Binding="{Binding Path=ParkingAvailable}"
+                        Header="Parking Available?"
+                        IsReadOnly="True"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <TextBox x:Name="descTxt" HorizontalAlignment="Center" Margin="0,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="644" Height="154" TextAlignment="Center"/>
+
+    </Grid>
+</Window>

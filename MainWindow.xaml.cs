@@ -36,5 +36,11 @@ namespace COMP231_Group2
         {
 
         }
-    }
+
+		private void Button_Click_2(object sender, RoutedEventArgs e)
+		{
+            DbGrid dbGrid = new DbGrid();
+            dbGrid.ShowDialog();
+		}
+	}
 }
