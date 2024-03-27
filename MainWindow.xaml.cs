@@ -23,7 +23,6 @@ namespace COMP231_Group2
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
