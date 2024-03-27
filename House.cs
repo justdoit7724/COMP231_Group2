@@ -14,5 +14,8 @@ namespace COMP231_Group2
         public string Region { get; set; }
         public bool Furnished { get; set; }
         public bool ParkingAvailable { get; set; }
+
+        // !!!
+        public int Price {  get; set; }
     }
 }

@@ -8,8 +8,12 @@ namespace COMP231_Group2
 {
     internal class InputModel
     {
-        public float CLanguage { get; set; }
-        public float YearsOfExperience { get; set; }
-        public float Salary { get; set; }
+        public float RoomCount { get; set; }
+        public float BathCount { get; set; }
+        public float Size { get; set; }
+        public float Region { get; set; }
+        public float Furnished { get; set; }
+        public float ParkingAvailable { get; set; }
+        public float Price { get; set; }
     }
 }
